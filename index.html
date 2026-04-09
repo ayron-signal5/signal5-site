@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -1862,6 +1862,1843 @@
             of Service.
           </p>
           <p class="footer-copy">© 2026 Signal5</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signal5 — Managed US Cloud Infrastructure for European Teams</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      :root {
+        --white: #ffffff;
+        --off-white: #f9f9f8;
+        --ink: #0d0d0d;
+        --ink-60: rgba(13, 13, 13, 0.6);
+        --ink-30: rgba(13, 13, 13, 0.3);
+        --ink-10: rgba(13, 13, 13, 0.08);
+        --blue: #0055ff;
+        --blue-pale: #e8efff;
+        --green: #00c26f;
+        --red-pale: #fff0f0;
+        --red-text: #c0392b;
+        --mono: "DM Mono", monospace;
+        --sans: "DM Sans", sans-serif;
+        --radius: 16px;
+        --radius-lg: 28px;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: var(--sans);
+        background: var(--white);
+        color: var(--ink);
+        -webkit-font-smoothing: antialiased;
+        overflow-x: hidden;
+      }
+
+      /* NAV */
+      nav {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background: rgba(255, 255, 255, 0.88);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-bottom: 1px solid var(--ink-10);
+      }
+      .nav-inner {
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 0 32px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .logo {
+        font-size: 17px;
+        font-weight: 600;
+        letter-spacing: -0.3px;
+        color: var(--ink);
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+      .logo-dot {
+        width: 8px;
+        height: 8px;
+        background: var(--blue);
+        border-radius: 50%;
+        display: inline-block;
+      }
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        list-style: none;
+      }
+      .nav-links a {
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--ink-60);
+        text-decoration: none;
+        transition: color 0.2s;
+      }
+      .nav-links a:hover {
+        color: var(--ink);
+      }
+      .btn-nav {
+        background: var(--ink);
+        color: var(--white) !important;
+        padding: 8px 18px;
+        border-radius: 100px;
+        font-size: 13px !important;
+        font-weight: 600 !important;
+        transition: opacity 0.2s !important;
+      }
+      .btn-nav:hover {
+        opacity: 0.8;
+      }
+
+      /* HERO */
+      .hero {
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 120px 32px 100px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 64px;
+        align-items: center;
+      }
+      .hero-label {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: var(--blue-pale);
+        color: var(--blue);
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        padding: 6px 14px;
+        border-radius: 100px;
+        margin-bottom: 28px;
+      }
+      .hero-label span {
+        width: 6px;
+        height: 6px;
+        background: var(--blue);
+        border-radius: 50%;
+        display: block;
+      }
+      .hero h1 {
+        font-size: clamp(38px, 5vw, 54px);
+        font-weight: 600;
+        line-height: 1.12;
+        letter-spacing: -1.5px;
+        color: var(--ink);
+        margin-bottom: 24px;
+      }
+      .hero h1 em {
+        font-style: normal;
+        color: var(--blue);
+      }
+      .hero-sub {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1.65;
+        color: var(--ink-60);
+        margin-bottom: 40px;
+        max-width: 420px;
+      }
+      .hero-actions {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+      .btn-primary {
+        background: var(--blue);
+        color: var(--white);
+        padding: 14px 28px;
+        border-radius: 100px;
+        font-size: 15px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: opacity 0.2s;
+        display: inline-block;
+      }
+      .btn-primary:hover {
+        opacity: 0.85;
+      }
+      .btn-ghost {
+        background: transparent;
+        color: var(--ink);
+        padding: 14px 28px;
+        border-radius: 100px;
+        font-size: 15px;
+        font-weight: 500;
+        text-decoration: none;
+        border: 1px solid var(--ink-10);
+        transition: border-color 0.2s, background 0.2s;
+        display: inline-block;
+      }
+      .btn-ghost:hover {
+        border-color: var(--ink-30);
+        background: var(--off-white);
+      }
+
+      /* HERO VISUAL */
+      .hero-visual {
+        background: var(--off-white);
+        border-radius: var(--radius-lg);
+        padding: 32px;
+        border: 1px solid var(--ink-10);
+        position: relative;
+        overflow: hidden;
+      }
+      .hero-visual::before {
+        content: "";
+        position: absolute;
+        top: -60px;
+        right: -60px;
+        width: 200px;
+        height: 200px;
+        background: radial-gradient(
+          circle,
+          rgba(0, 85, 255, 0.08) 0%,
+          transparent 70%
+        );
+        pointer-events: none;
+      }
+      .network-pill {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background: var(--white);
+        border: 1px solid var(--ink-10);
+        border-radius: 12px;
+        padding: 14px 18px;
+        margin-bottom: 10px;
+        font-size: 13px;
+        font-weight: 500;
+        transition: transform 0.2s;
+      }
+      .network-pill:hover {
+        transform: translateX(3px);
+      }
+      .network-pill .flag {
+        font-size: 20px;
+      }
+      .network-pill .pill-info {
+        flex: 1;
+      }
+      .network-pill .city {
+        font-weight: 600;
+        font-size: 13px;
+      }
+      .network-pill .detail {
+        font-size: 11px;
+        color: var(--ink-60);
+        margin-top: 1px;
+      }
+      .network-pill .latency {
+        font-family: var(--mono);
+        font-size: 11px;
+        font-weight: 500;
+        color: var(--green);
+        background: rgba(0, 194, 111, 0.08);
+        padding: 3px 8px;
+        border-radius: 6px;
+      }
+      .arrow-connector {
+        text-align: center;
+        font-size: 12px;
+        color: var(--ink-30);
+        font-family: var(--mono);
+        margin: 6px 0;
+        letter-spacing: 0.05em;
+      }
+      .us-exit {
+        background: var(--ink);
+        color: var(--white);
+        border-radius: 12px;
+        padding: 18px;
+        margin-top: 10px;
+      }
+      .us-exit .exit-label {
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.5);
+        margin-bottom: 6px;
+      }
+      .us-exit .exit-id {
+        font-family: var(--mono);
+        font-size: 13px;
+        color: var(--white);
+        margin-bottom: 4px;
+      }
+      .us-exit .carrier-tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        background: rgba(0, 85, 255, 0.3);
+        color: #80aaff;
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        padding: 3px 8px;
+        border-radius: 6px;
+      }
+      .status-dot {
+        width: 6px;
+        height: 6px;
+        background: var(--green);
+        border-radius: 50%;
+        display: inline-block;
+        animation: pulse 2s infinite;
+      }
+      @keyframes pulse {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.4;
+        }
+      }
+      .live-indicator {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 20px;
+        font-size: 12px;
+        color: var(--green);
+        font-family: var(--mono);
+      }
+
+      /* SHARED */
+      section {
+        padding: 100px 32px;
+      }
+      .container {
+        max-width: 1080px;
+        margin: 0 auto;
+      }
+      .section-label {
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--ink-30);
+        margin-bottom: 16px;
+      }
+      .section-h2 {
+        font-size: clamp(28px, 4vw, 40px);
+        font-weight: 600;
+        letter-spacing: -1px;
+        line-height: 1.15;
+        color: var(--ink);
+        margin-bottom: 16px;
+      }
+      .section-sub {
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 1.7;
+        color: var(--ink-60);
+        max-width: 540px;
+      }
+      .divider {
+        border: none;
+        border-top: 1px solid var(--ink-10);
+      }
+
+      /* TRUST BAR */
+      .trust-bar {
+        background: var(--off-white);
+        border-top: 1px solid var(--ink-10);
+        border-bottom: 1px solid var(--ink-10);
+        padding: 20px 32px;
+      }
+      .trust-bar-inner {
+        max-width: 1080px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        flex-wrap: wrap;
+      }
+      .trust-label {
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--ink-30);
+        white-space: nowrap;
+      }
+      .trust-items {
+        display: flex;
+        gap: 32px;
+        flex-wrap: wrap;
+      }
+      .trust-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 13px;
+        font-weight: 500;
+        color: var(--ink-60);
+      }
+
+      /* COMPARE */
+      .compare-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        margin-top: 48px;
+      }
+      .compare-card {
+        border-radius: var(--radius-lg);
+        padding: 36px;
+        border: 1px solid var(--ink-10);
+      }
+      .compare-card.problem {
+        background: var(--red-pale);
+      }
+      .compare-card.solution {
+        background: var(--ink);
+        color: var(--white);
+        border-color: transparent;
+      }
+      .compare-tag {
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        display: block;
+      }
+      .compare-card.problem .compare-tag {
+        color: var(--red-text);
+      }
+      .compare-card.solution .compare-tag {
+        color: rgba(255, 255, 255, 0.4);
+      }
+      .compare-card h3 {
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: -0.4px;
+        margin-bottom: 14px;
+      }
+      .compare-card.solution h3 {
+        color: var(--white);
+      }
+      .compare-card p {
+        font-size: 15px;
+        line-height: 1.7;
+        color: var(--ink-60);
+      }
+      .compare-card.solution p {
+        color: rgba(255, 255, 255, 0.6);
+      }
+      .compare-detail {
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 1px solid;
+      }
+      .compare-card.problem .compare-detail {
+        border-color: rgba(192, 57, 43, 0.15);
+      }
+      .compare-card.solution .compare-detail {
+        border-color: rgba(255, 255, 255, 0.1);
+      }
+      .compare-mono {
+        font-family: var(--mono);
+        font-size: 12px;
+        color: var(--ink-30);
+      }
+      .compare-card.solution .compare-mono {
+        color: rgba(255, 255, 255, 0.3);
+      }
+
+      /* NETWORK */
+      .network-section {
+        background: var(--off-white);
+      }
+      .network-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+        align-items: start;
+        margin-top: 64px;
+      }
+      .network-entry-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+      .entry-card {
+        background: var(--white);
+        border: 1px solid var(--ink-10);
+        border-radius: var(--radius);
+        padding: 20px 24px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        transition: border-color 0.2s, box-shadow 0.2s;
+      }
+      .entry-card:hover {
+        border-color: rgba(0, 85, 255, 0.2);
+        box-shadow: 0 4px 20px rgba(0, 85, 255, 0.06);
+      }
+      .entry-flag {
+        font-size: 28px;
+        line-height: 1;
+      }
+      .entry-info {
+        flex: 1;
+      }
+      .entry-city {
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: -0.2px;
+        margin-bottom: 2px;
+      }
+      .entry-detail {
+        font-size: 12px;
+        color: var(--ink-60);
+      }
+      .entry-badge {
+        font-size: 11px;
+        font-weight: 600;
+        color: var(--green);
+        background: rgba(0, 194, 111, 0.1);
+        padding: 4px 10px;
+        border-radius: 8px;
+        font-family: var(--mono);
+      }
+      .network-us-box {
+        background: var(--ink);
+        border-radius: var(--radius-lg);
+        padding: 40px;
+        color: var(--white);
+        position: sticky;
+        top: 80px;
+      }
+      .us-box-label {
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.4);
+        margin-bottom: 20px;
+      }
+      .us-box-title {
+        font-size: 22px;
+        font-weight: 600;
+        letter-spacing: -0.5px;
+        margin-bottom: 12px;
+      }
+      .us-box-desc {
+        font-size: 14px;
+        line-height: 1.7;
+        color: rgba(255, 255, 255, 0.55);
+        margin-bottom: 28px;
+      }
+      .carrier-block {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 12px;
+        padding: 20px;
+        margin-bottom: 12px;
+      }
+      .carrier-name {
+        font-family: var(--mono);
+        font-size: 13px;
+        font-weight: 500;
+        color: var(--white);
+        margin-bottom: 4px;
+      }
+      .carrier-note {
+        font-size: 12px;
+        color: rgba(255, 255, 255, 0.4);
+      }
+
+      /* AUDIT */
+      .audit-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        margin-top: 48px;
+      }
+      .audit-item {
+        background: var(--off-white);
+        border: 1px solid var(--ink-10);
+        border-radius: var(--radius);
+        padding: 28px 32px;
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+        transition: border-color 0.2s;
+      }
+      .audit-item:hover {
+        border-color: rgba(0, 85, 255, 0.2);
+      }
+      .audit-item.full-width {
+        grid-column: 1 / -1;
+      }
+      .audit-number {
+        font-family: var(--mono);
+        font-size: 11px;
+        font-weight: 500;
+        color: var(--ink-30);
+        min-width: 20px;
+        padding-top: 2px;
+      }
+      .audit-content h4 {
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: -0.2px;
+        margin-bottom: 6px;
+      }
+      .audit-content p {
+        font-size: 13px;
+        line-height: 1.65;
+        color: var(--ink-60);
+      }
+      .audit-mono {
+        font-family: var(--mono);
+        font-size: 11px;
+        color: var(--blue);
+        background: var(--blue-pale);
+        padding: 2px 7px;
+        border-radius: 5px;
+        display: inline-block;
+        margin-top: 8px;
+      }
+
+      /* IRISH EDGE */
+      .irish-section {
+        background: var(--ink);
+        color: var(--white);
+      }
+      .irish-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+        align-items: center;
+      }
+      .irish-section .section-label {
+        color: rgba(255, 255, 255, 0.3);
+      }
+      .irish-section .section-h2 {
+        color: var(--white);
+      }
+      .irish-section .section-sub {
+        color: rgba(255, 255, 255, 0.55);
+      }
+      .irish-points {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+        margin-top: 40px;
+      }
+      .irish-point {
+        display: flex;
+        gap: 18px;
+        padding-top: 28px;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+      }
+      .irish-point:first-child {
+        border-top: none;
+        padding-top: 0;
+      }
+      .irish-point-icon {
+        width: 36px;
+        height: 36px;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.06);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        flex-shrink: 0;
+      }
+      .irish-point h4 {
+        font-size: 15px;
+        font-weight: 600;
+        margin-bottom: 5px;
+      }
+      .irish-point p {
+        font-size: 14px;
+        line-height: 1.65;
+        color: rgba(255, 255, 255, 0.5);
+      }
+      .irish-card {
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: var(--radius-lg);
+        padding: 40px;
+      }
+      .profile-avatar {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #0055ff, #0040cc);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 26px;
+        margin-bottom: 20px;
+      }
+      .profile-name {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 4px;
+      }
+      .profile-title {
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.4);
+        font-family: var(--mono);
+        margin-bottom: 24px;
+      }
+      .profile-quote {
+        font-size: 15px;
+        line-height: 1.75;
+        color: rgba(255, 255, 255, 0.65);
+        font-style: italic;
+        border-left: 2px solid rgba(0, 85, 255, 0.5);
+        padding-left: 18px;
+        margin-bottom: 24px;
+      }
+      .profile-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+      .profile-tag {
+        font-size: 11px;
+        font-weight: 500;
+        padding: 5px 12px;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.06);
+        color: rgba(255, 255, 255, 0.5);
+        font-family: var(--mono);
+      }
+
+      /* HOW IT WORKS */
+      .how-banner {
+        background: var(--ink);
+        border-radius: var(--radius-lg);
+        padding: 56px;
+        margin-top: 48px;
+        color: var(--white);
+        position: relative;
+        overflow: hidden;
+      }
+      .how-banner::before {
+        content: "";
+        position: absolute;
+        top: -80px;
+        right: -80px;
+        width: 300px;
+        height: 300px;
+        background: radial-gradient(
+          circle,
+          rgba(0, 85, 255, 0.15) 0%,
+          transparent 70%
+        );
+        pointer-events: none;
+      }
+      .how-banner-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 48px;
+        gap: 40px;
+        flex-wrap: wrap;
+      }
+      .how-banner-top h3 {
+        font-size: 28px;
+        font-weight: 600;
+        letter-spacing: -0.6px;
+        color: var(--white);
+        max-width: 360px;
+        line-height: 1.25;
+      }
+      .how-banner-top p {
+        font-size: 15px;
+        line-height: 1.7;
+        color: rgba(255, 255, 255, 0.55);
+        max-width: 380px;
+      }
+      .how-steps {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0;
+        position: relative;
+      }
+      .how-steps::before {
+        content: "";
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        right: 20px;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.1);
+        z-index: 0;
+      }
+      .how-step {
+        position: relative;
+        z-index: 1;
+        padding-right: 24px;
+      }
+      .how-step-num {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: var(--blue);
+        color: var(--white);
+        font-size: 14px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 16px;
+      }
+      .how-step h4 {
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--white);
+        margin-bottom: 6px;
+      }
+      .how-step p {
+        font-size: 12px;
+        line-height: 1.6;
+        color: rgba(255, 255, 255, 0.45);
+      }
+
+      /* PRICING */
+      .pricing-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-top: 48px;
+        max-width: 600px;
+      }
+      .price-card {
+        background: var(--white);
+        border: 1px solid var(--ink-10);
+        border-radius: var(--radius-lg);
+        padding: 40px;
+      }
+      .price-card.featured {
+        background: var(--ink);
+        border-color: transparent;
+        color: var(--white);
+      }
+      .price-tier {
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--ink-30);
+        margin-bottom: 12px;
+      }
+      .price-card.featured .price-tier {
+        color: rgba(255, 255, 255, 0.3);
+      }
+      .price-card h3 {
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: -0.4px;
+        margin-bottom: 6px;
+      }
+      .price-card.featured h3 {
+        color: var(--white);
+      }
+      .price-desc {
+        font-size: 13px;
+        color: var(--ink-60);
+        margin-bottom: 28px;
+        line-height: 1.6;
+      }
+      .price-card.featured .price-desc {
+        color: rgba(255, 255, 255, 0.45);
+      }
+      .price-amount {
+        font-size: 42px;
+        font-weight: 600;
+        letter-spacing: -1.5px;
+        color: var(--ink);
+        margin-bottom: 4px;
+      }
+      .price-card.featured .price-amount {
+        color: var(--white);
+      }
+      .price-period {
+        font-size: 13px;
+        color: var(--ink-60);
+        margin-bottom: 28px;
+      }
+      .price-card.featured .price-period {
+        color: rgba(255, 255, 255, 0.4);
+      }
+      .price-features {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 32px;
+      }
+      .price-features li {
+        font-size: 14px;
+        color: var(--ink-60);
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+      }
+      .price-card.featured .price-features li {
+        color: rgba(255, 255, 255, 0.55);
+      }
+      .price-features li::before {
+        content: "✓";
+        color: var(--green);
+        font-weight: 700;
+        flex-shrink: 0;
+      }
+      .btn-price-primary {
+        display: block;
+        text-align: center;
+        background: var(--blue);
+        color: var(--white);
+        padding: 14px;
+        border-radius: 12px;
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: opacity 0.2s;
+        margin-bottom: 12px;
+      }
+      .btn-price-primary:hover {
+        opacity: 0.85;
+      }
+      .btn-manage {
+        display: block;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        color: rgba(255, 255, 255, 0.6);
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 12px;
+        font-weight: 500;
+        text-decoration: none;
+        transition: background 0.2s;
+      }
+      .btn-manage:hover {
+        background: rgba(255, 255, 255, 0.12);
+        color: var(--white);
+      }
+      .infra-note {
+        max-width: 600px;
+        margin-top: 20px;
+        background: var(--white);
+        border: 1px solid var(--ink-10);
+        border-radius: var(--radius);
+        padding: 20px 24px;
+        display: flex;
+        gap: 14px;
+        align-items: flex-start;
+      }
+      .infra-note-icon {
+        font-size: 18px;
+        flex-shrink: 0;
+        margin-top: 2px;
+      }
+      .infra-note-text {
+        font-size: 13px;
+        line-height: 1.65;
+        color: var(--ink-60);
+      }
+      .infra-note-text strong {
+        color: var(--ink);
+        font-weight: 600;
+      }
+
+      /* CONTACT CTA */
+      .contact-card {
+        background: var(--off-white);
+        border: 1px solid var(--ink-10);
+        border-radius: var(--radius-lg);
+        padding: 56px;
+        text-align: center;
+        max-width: 700px;
+        margin: 0 auto;
+      }
+      .contact-card h3 {
+        font-size: 28px;
+        font-weight: 600;
+        letter-spacing: -0.6px;
+        margin-bottom: 14px;
+      }
+      .contact-card p {
+        font-size: 16px;
+        color: var(--ink-60);
+        line-height: 1.65;
+        margin-bottom: 32px;
+      }
+      .contact-details {
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+        margin-bottom: 32px;
+        flex-wrap: wrap;
+      }
+      .contact-detail {
+        text-align: center;
+      }
+      .contact-detail-label {
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--ink-30);
+        margin-bottom: 4px;
+      }
+      .contact-detail-value {
+        font-size: 14px;
+        font-weight: 500;
+      }
+
+      /* FOOTER */
+      footer {
+        background: var(--ink);
+        color: rgba(255, 255, 255, 0.4);
+        padding: 64px 32px 40px;
+      }
+      .footer-inner {
+        max-width: 1080px;
+        margin: 0 auto;
+      }
+      .footer-top {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 64px;
+        padding-bottom: 48px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        margin-bottom: 32px;
+      }
+      .footer-brand .logo {
+        color: var(--white);
+        margin-bottom: 14px;
+        display: flex;
+      }
+      .footer-desc {
+        font-size: 13px;
+        line-height: 1.7;
+        margin-bottom: 20px;
+      }
+      .footer-contact a {
+        color: rgba(255, 255, 255, 0.55);
+        text-decoration: none;
+        font-size: 13px;
+        display: block;
+        margin-bottom: 4px;
+        transition: color 0.2s;
+      }
+      .footer-contact a:hover {
+        color: var(--white);
+      }
+      .footer-nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+      }
+      .footer-col h5 {
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.25);
+        margin-bottom: 16px;
+      }
+      .footer-col a {
+        display: block;
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.45);
+        text-decoration: none;
+        margin-bottom: 10px;
+        transition: color 0.2s;
+      }
+      .footer-col a:hover {
+        color: var(--white);
+      }
+      .footer-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 40px;
+        flex-wrap: wrap;
+      }
+      .footer-legal {
+        font-size: 11px;
+        line-height: 1.7;
+        max-width: 480px;
+      }
+      .footer-copy {
+        font-size: 12px;
+        white-space: nowrap;
+      }
+
+      /* ANIMATIONS */
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .fade-up {
+        animation: fadeUp 0.6s ease both;
+      }
+      .fade-up-delay-2 {
+        animation-delay: 0.2s;
+      }
+
+      /* RESPONSIVE */
+      @media (max-width: 768px) {
+        section {
+          padding: 72px 20px;
+        }
+        .hero {
+          display: flex;
+          flex-direction: column;
+          padding: 80px 20px 64px;
+          gap: 40px;
+        }
+        .hero > div:first-child {
+          order: 1;
+        }
+        .hero-visual {
+          order: 2;
+        }
+        .compare-grid,
+        .network-layout,
+        .irish-layout,
+        .pricing-grid {
+          grid-template-columns: 1fr;
+        }
+        .pricing-grid {
+          max-width: 400px;
+        }
+        .network-us-box {
+          position: static;
+        }
+        .audit-grid {
+          grid-template-columns: 1fr;
+        }
+        .audit-item.full-width {
+          grid-column: auto;
+        }
+        .how-steps {
+          grid-template-columns: 1fr 1fr;
+          gap: 24px;
+        }
+        .how-steps::before {
+          display: none;
+        }
+        .how-banner {
+          padding: 36px 28px;
+        }
+        .how-banner-top {
+          flex-direction: column;
+        }
+        .footer-top {
+          grid-template-columns: 1fr;
+          gap: 40px;
+        }
+        .footer-bottom {
+          flex-direction: column;
+          gap: 16px;
+        }
+        .nav-links {
+          display: none;
+        }
+        .contact-card {
+          padding: 36px 24px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-inner">
+        <a href="#top" class="logo"><span class="logo-dot"></span>Signal5</a>
+        <ul class="nav-links">
+          <li><a href="#network">The Network</a></li>
+          <li><a href="#audit">Setup Checklist</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li>
+            <a
+              href="https://buy.stripe.com/YOUR_STRIPE_LINK"
+              target="_blank"
+              class="btn-nav"
+              >Get Started</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="top">
+      <div class="hero">
+        <div class="fade-up">
+          <div class="hero-label">
+            <span></span>Irish Team · Global Managed Infrastructure
+          </div>
+          <h1>
+            Local speed.<br /><em>Global scale.</em><br />Pure Performance.
+          </h1>
+          <p class="hero-sub">
+            Signal5 provides managed US network gateways for European content
+            teams and businesses. A dedicated cloud presence, configured and
+            audited by our Irish-based consultants.
+          </p>
+          <div class="hero-actions">
+            <a
+              href="https://buy.stripe.com/YOUR_STRIPE_LINK"
+              target="_blank"
+              class="btn-primary"
+              >Get Started</a
+            >
+            <a href="#network" class="btn-ghost">How it works</a>
+          </div>
+        </div>
+
+        <div class="hero-visual fade-up fade-up-delay-2">
+          <div
+            style="
+              font-size: 11px;
+              font-weight: 600;
+              letter-spacing: 0.1em;
+              text-transform: uppercase;
+              color: var(--ink-30);
+              margin-bottom: 16px;
+            "
+          >
+            Regional Access Points
+          </div>
+          <div class="network-pill">
+            <span class="flag">🇮🇪</span>
+            <div class="pill-info">
+              <div class="city">Dublin</div>
+              <div class="detail">Primary Entry · Managed Node</div>
+            </div>
+            <span class="latency">&lt;4ms</span>
+          </div>
+          <div class="network-pill">
+            <span class="flag">🇬🇧</span>
+            <div class="pill-info">
+              <div class="city">London</div>
+              <div class="detail">Regional Entry</div>
+            </div>
+            <span class="latency">&lt;6ms</span>
+          </div>
+          <div class="network-pill">
+            <span class="flag">🇫🇷</span>
+            <div class="pill-info">
+              <div class="city">Paris</div>
+              <div class="detail">Regional Entry</div>
+            </div>
+            <span class="latency">&lt;7ms</span>
+          </div>
+          <div class="network-pill">
+            <span class="flag">🇩🇪</span>
+            <div class="pill-info">
+              <div class="city">Frankfurt</div>
+              <div class="detail">Regional Entry</div>
+            </div>
+            <span class="latency">&lt;8ms</span>
+          </div>
+          <div class="arrow-connector">↓ &nbsp; encrypted gateway &nbsp; ↓</div>
+          <div class="us-exit">
+            <div class="exit-label">US Cloud Gateway</div>
+            <div class="exit-id">signal5-managed-node</div>
+            <div
+              style="
+                margin-top: 10px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+              "
+            >
+              <span class="carrier-tag">Dedicated Network</span>
+              <span
+                style="
+                  font-size: 11px;
+                  color: rgba(255, 255, 255, 0.3);
+                  font-family: var(--mono);
+                "
+                >Direct Connect · Low Latency</span
+              >
+            </div>
+          </div>
+          <div class="live-indicator">
+            <span class="status-dot"></span>Infrastructure Operational
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="trust-bar">
+      <div class="trust-bar-inner">
+        <span class="trust-label">Managed Compliance</span>
+        <div class="trust-items">
+          <div class="trust-item">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+              <circle cx="7" cy="7" r="6.5" stroke="#00c26f" />
+              <path
+                d="M4 7l2 2 4-4"
+                stroke="#00c26f"
+                stroke-width="1.3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            Dedicated Private IPs
+          </div>
+          <div class="trust-item">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+              <circle cx="7" cy="7" r="6.5" stroke="#00c26f" />
+              <path
+                d="M4 7l2 2 4-4"
+                stroke="#00c26f"
+                stroke-width="1.3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            4 European Edge Nodes
+          </div>
+          <div class="trust-item">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+              <circle cx="7" cy="7" r="6.5" stroke="#00c26f" />
+              <path
+                d="M4 7l2 2 4-4"
+                stroke="#00c26f"
+                stroke-width="1.3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            Security Audit Included
+          </div>
+          <div class="trust-item">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+              <circle cx="7" cy="7" r="6.5" stroke="#00c26f" />
+              <path
+                d="M4 7l2 2 4-4"
+                stroke="#00c26f"
+                stroke-width="1.3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            Dublin-based Support
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <div class="container">
+        <p class="section-label">Infrastructure Comparison</p>
+        <h2 class="section-h2">
+          Legacy Tools Flag Assets.<br />Signal5 Protects Them.
+        </h2>
+        <p class="section-sub">
+          Professional cloud configuration ensures your business assets remain
+          isolated from commercial data-centre noise.
+        </p>
+        <div class="compare-grid">
+          <div class="compare-card problem">
+            <span class="compare-tag">Commercial VPN / Proxy</span>
+            <h3>Shared Commercial Reputation</h3>
+            <p>
+              Traditional VPNs route through high-density commercial IP ranges
+              used by millions. These ranges are often flagged by platform
+              security filters, leading to asset suppression or reach penalties.
+            </p>
+            <div class="compare-detail">
+              <div class="compare-mono">
+                Class: Shared ASN · Risk: Elevated · Reliability: Low
+              </div>
+            </div>
+          </div>
+          <div class="compare-card solution">
+            <span class="compare-tag">Signal5 Managed Gateway</span>
+            <h3>Clean Network Reputation</h3>
+            <p>
+              We provision and manage dedicated cloud nodes within your own
+              environment. By isolating your traffic through high-tier network
+              infrastructure, your assets are recognized as authentic,
+              professional nodes.
+            </p>
+            <div class="compare-detail">
+              <div class="compare-mono">
+                Class: Dedicated · Risk: Minimal · Reliability: Enterprise
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <section id="network" class="network-section">
+      <div class="container">
+        <p class="section-label">Technical Architecture</p>
+        <h2 class="section-h2">
+          Edge Computing.<br />Global Network Performance.
+        </h2>
+        <p class="section-sub">
+          Connect via local European edge nodes for zero-lag response time,
+          bridged to your dedicated US network infrastructure.
+        </p>
+        <div class="network-layout">
+          <div>
+            <div
+              style="
+                font-size: 11px;
+                font-weight: 600;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                color: var(--ink-30);
+                margin-bottom: 20px;
+              "
+            >
+              Regional Edge Nodes
+            </div>
+            <div class="network-entry-list">
+              <div class="entry-card">
+                <span class="entry-flag">🇮🇪</span>
+                <div class="entry-info">
+                  <div class="entry-city">Dublin Hub</div>
+                  <div class="entry-detail">Primary Managed Infrastructure</div>
+                </div>
+                <span class="entry-badge">&lt;4ms</span>
+              </div>
+              <div class="entry-card">
+                <span class="entry-flag">🇬🇧</span>
+                <div class="entry-info">
+                  <div class="entry-city">London Node</div>
+                  <div class="entry-detail">Regional Acceleration</div>
+                </div>
+                <span class="entry-badge">&lt;6ms</span>
+              </div>
+              <div class="entry-card">
+                <span class="entry-flag">🇫🇷</span>
+                <div class="entry-info">
+                  <div class="entry-city">Paris Node</div>
+                  <div class="entry-detail">Regional Acceleration</div>
+                </div>
+                <span class="entry-badge">&lt;7ms</span>
+              </div>
+              <div class="entry-card">
+                <span class="entry-flag">🇩🇪</span>
+                <div class="entry-info">
+                  <div class="entry-city">Frankfurt Node</div>
+                  <div class="entry-detail">Regional Acceleration</div>
+                </div>
+                <span class="entry-badge">&lt;8ms</span>
+              </div>
+            </div>
+            <p
+              style="
+                font-size: 13px;
+                color: var(--ink-60);
+                margin-top: 20px;
+                line-height: 1.65;
+              "
+            >
+              Low-latency connections are maintained through regional ISP
+              peering. The European leg of the connection is optimized before
+              bridging to US infrastructure.
+            </p>
+          </div>
+          <div class="network-us-box">
+            <div class="us-box-label">Infrastructure Monitoring</div>
+            <div class="us-box-title">Global Cloud Management</div>
+            <div class="us-box-desc">
+              Your gateway resides in a private, managed environment. We handle
+              the complexity of provisioning and health-monitoring so you can
+              focus on operations.
+            </div>
+            <div class="carrier-block">
+              <div class="carrier-name">Private IP Provisioning</div>
+              <div class="carrier-note">
+                Assigned exclusively to your business. No shared pools,
+                preventing cross-account contamination.
+              </div>
+            </div>
+            <div class="carrier-block">
+              <div class="carrier-name">Cloud-Native Architecture</div>
+              <div class="carrier-note">
+                Scalable infrastructure managed entirely within a virtual
+                private cloud environment. No physical hardware needed.
+              </div>
+            </div>
+            <div class="carrier-block">
+              <div class="carrier-name">Automatic Security Failsafe</div>
+              <div class="carrier-note">
+                If network stability drops, the gateway closes immediately to
+                prevent data exposure or misaligned location signals.
+              </div>
+            </div>
+            <div class="live-indicator">
+              <span class="status-dot"></span>Monitoring Active · US East
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="audit">
+      <div class="container">
+        <p class="section-label">Deployment Audit</p>
+        <h2 class="section-h2">Six-point Security Checklist.</h2>
+        <p class="section-sub">
+          We perform a structured audit of your environment before any
+          deployment goes live to ensure technical alignment.
+        </p>
+        <div class="audit-grid">
+          <div class="audit-item">
+            <div class="audit-number">01</div>
+            <div class="audit-content">
+              <h4>System Reset Verification</h4>
+              <p>
+                To eliminate legacy cache and location fingerprints, your
+                hardware must be reset to a clean state before environment
+                configuration.
+              </p>
+              <span class="audit-mono">Status: Required for Setup</span>
+            </div>
+          </div>
+          <div class="audit-item">
+            <div class="audit-number">02</div>
+            <div class="audit-content">
+              <h4>Baseband Isolation</h4>
+              <p>
+                Physical SIM signals must be disabled at the hardware level to
+                prevent cellular location leakage during network operations.
+              </p>
+              <span class="audit-mono">Status: Physical SIM Removed</span>
+            </div>
+          </div>
+          <div class="audit-item">
+            <div class="audit-number">03</div>
+            <div class="audit-content">
+              <h4>Location Service Audit</h4>
+              <p>
+                We verify that hardware-level GPS and location tracking are
+                disabled to prevent conflict with your cloud gateway signal.
+              </p>
+              <span class="audit-mono">Status: GPS Services Inactive</span>
+            </div>
+          </div>
+          <div class="audit-item">
+            <div class="audit-number">04</div>
+            <div class="audit-content">
+              <h4>Private DNS Routing</h4>
+              <p>
+                DNS resolution is configured through your private cloud
+                infrastructure to ensure zero geographic leakage through local
+                ISP resolvers.
+              </p>
+              <span class="audit-mono">Status: Private Resolver Live</span>
+            </div>
+          </div>
+          <div class="audit-item">
+            <div class="audit-number">05</div>
+            <div class="audit-content">
+              <h4>Network Layer Kill-Switch</h4>
+              <p>
+                Security is enforced at the OS level. If the cloud gateway is
+                unreachable, all outgoing network traffic is halted.
+              </p>
+              <span class="audit-mono">Status: System-Level Enabled</span>
+            </div>
+          </div>
+          <div class="audit-item full-width">
+            <div class="audit-number">06</div>
+            <div class="audit-content">
+              <h4>Global Region Alignment</h4>
+              <p>
+                We audit the regional settings of your operating system,
+                accounts, and application environment to ensure they reflect
+                your dedicated US presence. We walk you through these final
+                steps during our live setup session.
+              </p>
+              <span class="audit-mono">Status: Region Parity Verified</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="irish-section">
+      <div class="container">
+        <div class="irish-layout">
+          <div>
+            <p class="section-label">The Signal5 Difference</p>
+            <h2 class="section-h2">
+              Dublin-based Expertise.<br />Not a faceless platform.
+            </h2>
+            <p class="section-sub">
+              Automated SaaS cannot audit your specific technical needs. We
+              provide direct, expert-led cloud consultancy.
+            </p>
+            <div class="irish-points">
+              <div class="irish-point">
+                <div class="irish-point-icon">🧭</div>
+                <div>
+                  <h4>Irish Compliance</h4>
+                  <p>
+                    Work with an Irish-registered consultancy. We provide clear
+                    billing, direct support, and professional accountability.
+                  </p>
+                </div>
+              </div>
+              <div class="irish-point">
+                <div class="irish-point-icon">🛡️</div>
+                <div>
+                  <h4>Setup Validation</h4>
+                  <p>
+                    Every deployment includes a live video session to validate
+                    your configuration and ensure your infrastructure is
+                    correctly established.
+                  </p>
+                </div>
+              </div>
+              <div class="irish-point">
+                <div class="irish-point-icon">🔒</div>
+                <div>
+                  <h4>Managed Maintenance</h4>
+                  <p>
+                    We provide ongoing monitoring of your cloud reputation and
+                    gateway health, ensuring long-term stability for your
+                    content assets.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="irish-card">
+              <div class="profile-avatar">🇮🇪</div>
+              <div class="profile-name">Signal5</div>
+              <div class="profile-title">
+                Dublin, Ireland · Cloud Infrastructure Consultancy
+              </div>
+              <p class="profile-quote">
+                "We founded Signal5 to solve a specific infrastructure problem
+                for professional European creators. We bridge the gap between
+                complex AWS networking and user-friendly accessibility."
+              </p>
+              <div class="profile-tags">
+                <span class="profile-tag">AWS Consulting</span>
+                <span class="profile-tag">Cloud Security</span>
+                <span class="profile-tag">Network Architecture</span>
+                <span class="profile-tag">Dublin-Based</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="background: var(--white)">
+      <div class="container">
+        <p class="section-label">Onboarding Process</p>
+        <h2 class="section-h2">Transparent. Reliable. Expert-Led.</h2>
+        <p class="section-sub">
+          Our four-stage onboarding ensures your infrastructure is live and
+          properly audited within your scheduled timeframe.
+        </p>
+        <div class="how-banner">
+          <div class="how-banner-top">
+            <h3>Managed Deployment Timeline.</h3>
+            <p>
+              Every client follows a structured path from procurement to a live
+              gateway. We verify every technical detail on a live call before
+              deployment is finalized.
+            </p>
+          </div>
+          <div class="how-steps">
+            <div class="how-step">
+              <div class="how-step-num">1</div>
+              <h4>Procurement</h4>
+              <p>
+                Complete your subscription setup. This covers your deployment
+                fee and the first 30 days of management.
+              </p>
+            </div>
+            <div class="how-step">
+              <div class="how-step-num">2</div>
+              <h4>Setup Validation</h4>
+              <p>
+                Schedule a live session with our team. We perform the six-point
+                audit and hardware configuration together.
+              </p>
+            </div>
+            <div class="how-step">
+              <div class="how-step-num">3</div>
+              <h4>Gateway Activation</h4>
+              <p>
+                Your dedicated US network gateway is activated and verified
+                during our session. Immediate deployment.
+              </p>
+            </div>
+            <div class="how-step">
+              <div class="how-step-num">4</div>
+              <h4>Managed Care</h4>
+              <p>
+                We continue monitoring your infrastructure health. Cancel or
+                manage your retainer at any time via your customer portal.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" style="background: var(--off-white)">
+      <div class="container">
+        <p class="section-label">Pricing</p>
+        <h2 class="section-h2">Professional Managed Services.</h2>
+        <p class="section-sub">
+          A transparent pricing model covering your technical setup, first month
+          of management, and ongoing support.
+        </p>
+        <div class="pricing-grid">
+          <div class="price-card featured">
+            <div class="price-tier">Managed Subscription</div>
+            <h3>Deployment & Cloud Retainer</h3>
+            <p class="price-desc">
+              Includes full private IP provisioning, six-point technical audit,
+              live onboarding session, and your first 30 days. Automatically
+              moves to a management retainer.
+            </p>
+            <div class="price-amount">€160</div>
+            <div class="price-period">Setup & Month 1 · then €49/mo</div>
+            <ul class="price-features">
+              <li>Dedicated Private IP Allocation</li>
+              <li>Six-Point Technical Audit</li>
+              <li>Live Security & Setup Validation Session</li>
+              <li>Cloud Environment Configuration</li>
+              <li>Ongoing Reputation Monitoring</li>
+              <li>Cancel Anytime (No minimum contract)</li>
+            </ul>
+            <a
+              href="https://buy.stripe.com/YOUR_STRIPE_LINK"
+              target="_blank"
+              class="btn-price-primary"
+              >Get Started →</a
+            >
+            <a
+              href="https://billing.stripe.com/p/login/YOUR_PORTAL"
+              class="btn-manage"
+              >Manage / Cancel Subscription</a
+            >
+          </div>
+        </div>
+        <div class="infra-note">
+          <span class="infra-note-icon">💡</span>
+          <div class="infra-note-text">
+            <strong>Client-Owned Infrastructure.</strong> As part of our
+            consultancy, we configure infrastructure within your own cloud
+            account. You pay the provider directly for consumption (typically
+            <strong>$15–$65/mo</strong> based on active usage hours).
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="#top" class="logo"
+              ><span class="logo-dot"></span>Signal5</a
+            >
+            <p class="footer-desc">
+              Signal5 is a Dublin-based cloud infrastructure consultancy. We
+              specialize in the configuration and management of private US
+              network gateways for European content teams.
+            </p>
+            <div class="footer-contact">
+              <a href="mailto:hello@signal5.io">hello@signal5.io</a>
+              <a href="mailto:support@signal5.io">support@signal5.io</a>
+            </div>
+          </div>
+          <div class="footer-nav">
+            <div class="footer-col">
+              <h5>Services</h5>
+              <a href="#network">The Network</a>
+              <a href="#audit">Setup Audit</a>
+              <a href="#about">About Us</a>
+              <a href="#pricing">Pricing</a>
+            </div>
+            <div class="footer-col">
+              <h5>Legal</h5>
+              <a href="terms.html">Terms of Service</a>
+              <a href="terms.html#privacy">Privacy Policy</a>
+              <a href="terms.html#refunds">Refund Policy</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-legal">
+            Signal5 is an independent consultancy registered in Ireland (CRO:
+            [INSERT_YOUR_NUMBER]). We provide technical configuration services
+            for client-owned cloud accounts. Use of this infrastructure must
+            comply with the terms of third-party platforms.
+          </p>
+          <div style="text-align: right">
+            <p style="font-size: 11px; margin-bottom: 4px">
+              [INSERT_YOUR_BUSINESS_ADDRESS], Dublin, Ireland
+            </p>
+            <p class="footer-copy">© 2026 Signal5</p>
+          </div>
         </div>
       </div>
     </footer>
