@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -506,6 +506,594 @@
               >hello@signal5.io</a
             >
           </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="legal-footer">
+      <a href="index.html">← Return to Signal5</a>
+    </div>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Legal — Signal5</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      :root {
+        --white: #ffffff;
+        --off-white: #f9f9f8;
+        --ink: #0d0d0d;
+        --ink-60: rgba(13, 13, 13, 0.6);
+        --ink-30: rgba(13, 13, 13, 0.3);
+        --ink-10: rgba(13, 13, 13, 0.08);
+        --blue: #0055ff;
+        --blue-pale: #e8efff;
+        --sans: "DM Sans", sans-serif;
+        --mono: "DM Mono", monospace;
+        --radius: 16px;
+        --radius-lg: 28px;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: var(--sans);
+        background: var(--white);
+        color: var(--ink);
+        -webkit-font-smoothing: antialiased;
+      }
+
+      /* NAV */
+      nav {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background: rgba(255, 255, 255, 0.88);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-bottom: 1px solid var(--ink-10);
+      }
+      .nav-inner {
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 0 32px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .logo {
+        font-size: 17px;
+        font-weight: 600;
+        letter-spacing: -0.3px;
+        color: var(--ink);
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+      .logo-dot {
+        width: 8px;
+        height: 8px;
+        background: var(--blue);
+        border-radius: 50%;
+        display: inline-block;
+      }
+      .back-link {
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--ink-60);
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        transition: color 0.2s;
+      }
+      .back-link:hover {
+        color: var(--ink);
+      }
+
+      /* LAYOUT */
+      .legal-hero {
+        background: var(--off-white);
+        border-bottom: 1px solid var(--ink-10);
+        padding: 64px 32px 56px;
+      }
+      .legal-hero-inner {
+        max-width: 760px;
+        margin: 0 auto;
+      }
+      .legal-label {
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--ink-30);
+        margin-bottom: 16px;
+      }
+      .legal-hero h1 {
+        font-size: 40px;
+        font-weight: 600;
+        letter-spacing: -1px;
+        line-height: 1.15;
+        margin-bottom: 14px;
+      }
+      .legal-hero p {
+        font-size: 15px;
+        color: var(--ink-60);
+        line-height: 1.7;
+      }
+      .legal-updated {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 20px;
+        font-size: 12px;
+        font-family: var(--mono);
+        color: var(--ink-30);
+        background: var(--white);
+        border: 1px solid var(--ink-10);
+        padding: 5px 12px;
+        border-radius: 8px;
+      }
+
+      /* SIDEBAR + CONTENT */
+      .legal-body {
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 64px 32px;
+        display: grid;
+        grid-template-columns: 220px 1fr;
+        gap: 80px;
+        align-items: start;
+      }
+      .legal-sidebar {
+        position: sticky;
+        top: 80px;
+      }
+      .sidebar-label {
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--ink-30);
+        margin-bottom: 14px;
+      }
+      .sidebar-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+      }
+      .sidebar-nav a {
+        font-size: 13px;
+        font-weight: 500;
+        color: var(--ink-60);
+        text-decoration: none;
+        padding: 7px 12px;
+        border-radius: 8px;
+        transition: background 0.15s, color 0.15s;
+      }
+      .sidebar-nav a:hover {
+        background: var(--off-white);
+        color: var(--ink);
+      }
+
+      /* SECTIONS */
+      .legal-section {
+        margin-bottom: 72px;
+        padding-top: 8px;
+      }
+      .legal-section-tag {
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--blue);
+        margin-bottom: 12px;
+        display: block;
+      }
+      .legal-section h2 {
+        font-size: 26px;
+        font-weight: 600;
+        letter-spacing: -0.5px;
+        margin-bottom: 20px;
+        padding-bottom: 16px;
+        border-bottom: 1px solid var(--ink-10);
+      }
+      .legal-section h3 {
+        font-size: 16px;
+        font-weight: 600;
+        margin-top: 28px;
+        margin-bottom: 10px;
+      }
+      .legal-section p {
+        font-size: 15px;
+        line-height: 1.75;
+        color: var(--ink-60);
+        margin-bottom: 16px;
+      }
+      .legal-placeholder {
+        background: var(--off-white);
+        border: 1px dashed var(--ink-30);
+        border-radius: var(--radius);
+        padding: 24px;
+        margin-top: 12px;
+      }
+      .legal-section ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      .legal-section ul li {
+        font-size: 15px;
+        line-height: 1.65;
+        color: var(--ink-60);
+        padding-left: 20px;
+        position: relative;
+      }
+      .legal-section ul li::before {
+        content: "—";
+        position: absolute;
+        left: 0;
+        color: var(--ink-30);
+        font-size: 13px;
+      }
+
+      /* FOOTER */
+      .legal-footer {
+        background: var(--ink);
+        padding: 32px;
+        text-align: center;
+      }
+      .legal-footer a {
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.4);
+        text-decoration: none;
+      }
+      .legal-footer a:hover {
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+      @media (max-width: 768px) {
+        .legal-body {
+          grid-template-columns: 1fr;
+          gap: 40px;
+          padding: 40px 20px;
+        }
+        .legal-sidebar {
+          position: static;
+        }
+        .legal-hero {
+          padding: 48px 20px 40px;
+        }
+        .legal-hero h1 {
+          font-size: 30px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-inner">
+        <a href="index.html" class="logo"
+          ><span class="logo-dot"></span>Signal5</a
+        >
+        <a href="index.html" class="back-link">← Back to site</a>
+      </div>
+    </nav>
+
+    <div class="legal-hero">
+      <div class="legal-hero-inner">
+        <div class="legal-label">Consultancy Documentation</div>
+        <h1>Terms, Privacy &amp; Refunds</h1>
+        <p>
+          Formal operating standards and client agreements for Signal5
+          Consultancy.
+        </p>
+        <div class="legal-updated">Last updated: April 11, 2026</div>
+      </div>
+    </div>
+
+    <div class="legal-body">
+      <div class="legal-sidebar">
+        <div class="sidebar-label">On this page</div>
+        <nav class="sidebar-nav">
+          <a href="#terms">Terms of Service</a>
+          <a href="#privacy">Privacy Policy</a>
+          <a href="#refunds">Refund Policy</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+
+      <div>
+        <div class="legal-section" id="terms">
+          <span class="legal-section-tag">Section 01</span>
+          <h2>Terms of Service</h2>
+
+          <h3>1. Architectural Consultancy Agreement</h3>
+          <div class="legal-placeholder">
+            <p>
+              Signal5 is a managed cloud consultancy based in Ireland. By
+              engaging our services, the Client acknowledges that Signal5
+              provides architectural configuration and managed optimization of
+              client-owned Amazon Web Services (AWS) environments. This is a
+              professional technical service, not a software product or utility.
+            </p>
+          </div>
+
+          <h3>2. Service Delivery &amp; Verification</h3>
+          <div class="legal-placeholder">
+            <p>
+              Delivery is defined as the successful provisioning of a Dedicated
+              US Network Node. Final delivery is verified via a live Network
+              Integrity Audit (onboarding session). Once the node is validated
+              as active and consistent with the provisioned environment, the
+              service is deemed fully rendered and completed.
+            </p>
+          </div>
+
+          <h3>3. Environment Integrity &amp; Client-Side Compliance</h3>
+          <div class="legal-placeholder">
+            <p>
+              The stability of the provisioned network relies on the Client
+              maintaining a Controlled Hardware Environment. Signal5 is not
+              liable for any "Origin-Network Exposure" (connectivity
+              collisions), network identity inconsistencies, or third-party
+              platform restrictions resulting from:
+            </p>
+            <ul>
+              <li>
+                <strong>Hardware Configuration:</strong> Failure to maintain
+                Hardware Level Isolation (active local cellular signals,
+                physical SIM cards, or eSIMs).
+              </li>
+              <li>
+                <strong>Metadata Management:</strong> Failure to maintain
+                Location Metadata Compliance (System-Level Location Services).
+              </li>
+              <li>
+                <strong>Software Tampering:</strong> Unauthorized modification
+                of Client-side routing configurations or network protocols.
+              </li>
+              <li>
+                <strong>Fail-Safe Protocol:</strong> Improper use or
+                deactivation of the enforced Network Fail-Safe Protocol.
+              </li>
+            </ul>
+          </div>
+
+          <h3>4. Deployment Fee &amp; Refund Policy (The Chargeback Shield)</h3>
+          <div class="legal-placeholder">
+            <p>
+              <strong>Non-Refundable Labor:</strong> The €160 Deployment Fee is
+              a service-based charge for professional technical labor. This fee
+              is 100% non-refundable once the technical onboarding session has
+              commenced, as specialized labor has been initiated.
+            </p>
+            <p>
+              <strong>Cancellation:</strong> Refunds are only eligible if
+              requested via email at least 24 hours prior to the scheduled
+              onboarding session.
+            </p>
+            <p>
+              <strong>Monthly Retainer:</strong> The €49 monthly management fee
+              is billed in advance and is non-refundable once the billing cycle
+              begins.
+            </p>
+          </div>
+
+          <h3>5. Infrastructure Ownership &amp; Third-Party Costs</h3>
+          <div class="legal-placeholder">
+            <p>
+              The Client maintains full ownership of the underlying AWS account.
+              Signal5 is a technical manager only. All third-party
+              infrastructure usage costs are the sole responsibility of the
+              Client and are billed directly by the provider (AWS).
+            </p>
+          </div>
+
+          <h3>6. Limitation of Liability &amp; Force Majeure</h3>
+          <div class="legal-placeholder">
+            <p>
+              Signal5 is not liable for service interruptions caused by upstream
+              providers (AWS), hardware failure, or changes in third-party
+              platform algorithms. Our total liability is limited to the amount
+              paid for the most recent service period.
+            </p>
+          </div>
+
+          <h3>7. No Partnership or Agency</h3>
+          <div class="legal-placeholder">
+            <p>
+              Nothing in this agreement creates a partnership, joint venture, or
+              employer-employee relationship. Signal5 acts as an independent
+              contractor providing technical expertise.
+            </p>
+          </div>
+        </div>
+
+        <div class="legal-section" id="privacy">
+          <span class="legal-section-tag">Section 02</span>
+          <h2>Privacy Policy</h2>
+
+          <h3>1. Data Sovereignty &amp; Managed Infrastructure</h3>
+          <div class="legal-placeholder">
+            <p>
+              Signal5 operates under a strict Managed Infrastructure Model.
+              Unlike standard software-as-a-service (SaaS) providers, we do not
+              own the network infrastructure. All provisioning occurs within the
+              Client’s private Amazon Web Services (AWS) environment. This
+              ensures the Client maintains total sovereignty and control over
+              their own data and network traffic.
+            </p>
+          </div>
+
+          <h3>2. Zero-Retention Traffic Policy (Zero-Logs)</h3>
+          <div class="legal-placeholder">
+            <p>
+              As a consultancy, Signal5 provides the architectural design but
+              does not operate as a data carrier. We do not log, store, monitor,
+              or inspect the content of the data traffic moving through your
+              provisioned network node. Your traffic flows directly from your
+              hardware to your isolated AWS environment; Signal5 has no
+              technical visibility into your browsing history or data packets.
+            </p>
+          </div>
+
+          <h3>3. Information We Collect</h3>
+          <div class="legal-placeholder">
+            <p>
+              We collect only the minimum data required to deliver our
+              professional technical services:
+            </p>
+            <ul>
+              <li>
+                <strong>Identification Data:</strong> Name and business email
+                address for communication and billing.
+              </li>
+              <li>
+                <strong>Credential Data:</strong> Temporary AWS IAM credentials
+                provided by the Client for the purpose of architectural
+                deployment and health monitoring.
+              </li>
+              <li>
+                <strong>Billing Data:</strong> All financial transactions are
+                processed securely via Stripe. Signal5 does not store or have
+                access to your full credit card details or payment credentials.
+              </li>
+            </ul>
+          </div>
+
+          <h3>4. Use of Third-Party Processors</h3>
+          <div class="legal-placeholder">
+            <p>
+              To provide our professional services, we utilize industry-standard
+              third-party providers:
+            </p>
+            <ul>
+              <li>
+                <strong>Stripe:</strong> For secure, PCI-compliant payment
+                processing.
+              </li>
+              <li>
+                <strong>Amazon Web Services (AWS):</strong> For hosting and
+                infrastructure provisioning within the Client’s own account.
+              </li>
+            </ul>
+            <p>
+              Signal5 does not sell, rent, or trade your data to any third-party
+              marketing or data-mining firms.
+            </p>
+          </div>
+
+          <h3>5. Managed Maintenance &amp; Oversight Access</h3>
+          <div class="legal-placeholder">
+            <p>
+              To fulfill our obligations under the Managed Retainer, Signal5
+              maintains persistent IAM (Identity and Access Management) access
+              to the Client’s provisioned AWS environment. This access is
+              strictly utilized for operational oversight, including monitoring
+              node uptime, performing health checks, and managing architectural
+              fail-safes. We do not access Client data; our oversight is limited
+              to the technical stability of the cloud infrastructure.
+            </p>
+          </div>
+
+          <h3>6. Your Rights (GDPR &amp; Data Protection Act)</h3>
+          <div class="legal-placeholder">
+            <p>
+              As an Irish-based consultancy, we comply with the Data Protection
+              Acts 1988–2018 and the EU GDPR. You have the right to access,
+              rectify, or request the erasure of your personal data held by us.
+              For any data-related requests, please contact hello@signal5.io.
+            </p>
+          </div>
+        </div>
+
+        <div class="legal-section" id="refunds">
+          <span class="legal-section-tag">Section 03</span>
+          <h2>Refund Policy</h2>
+
+          <h3>1. Setup &amp; Technical Deployment Fee</h3>
+          <div class="legal-placeholder">
+            <p>
+              The €160 initial payment is a service-based fee covering custom
+              architectural design, 1-on-1 technical deployment labor, and your
+              first 30 days of managed oversight.
+            </p>
+            <ul>
+              <li>
+                <strong>Pre-Onboarding:</strong> You are eligible for a full
+                refund if you cancel your engagement at least 24 hours before
+                your scheduled FaceTime onboarding session.
+              </li>
+              <li>
+                <strong>Post-Onboarding:</strong> Once the FaceTime session has
+                commenced and the US Network Presence has been live-validated on
+                the call, the Setup Fee is 100% non-refundable. This is because
+                the specialized professional labor has been fully rendered.
+              </li>
+            </ul>
+          </div>
+
+          <h3>2. Managed Monthly Retainer</h3>
+          <div class="legal-placeholder">
+            <p>
+              The €49 recurring fee covers ongoing node health monitoring,
+              architectural updates, and fail-safe integrity checks. Retainer
+              fees are billed in advance and are non-refundable once the billing
+              cycle has started.
+            </p>
+            <p>
+              <strong>Cancellation:</strong> You can cancel your managed
+              retainer at any time via your Stripe Customer Portal or by
+              emailing support@signal5.io. Cancellation stops future billing,
+              but no pro-rata refunds are issued for the current month.
+            </p>
+          </div>
+
+          <h3>3. Verification of Service</h3>
+          <div class="legal-placeholder">
+            <p>
+              Upon completion of the live deployment, the Client will be asked
+              to verify the active US Network Presence via email. This
+              confirmation serves as the formal "Handover" of the provisioned
+              environment. Once verified, the service is considered successfully
+              delivered in full.
+            </p>
+          </div>
+        </div>
+
+        <div class="legal-section" id="contact">
+          <span class="legal-section-tag">Section 04</span>
+          <h2>Contact</h2>
+          <div class="legal-placeholder">
+            <p>
+              <strong>Signal5 Consultancy</strong><br />
+              11 Cluain Mhor, Clonmellon<br />
+              Navan, Co. Meath, Ireland<br />
+              <a href="mailto:hello@signal5.io">hello@signal5.io</a><br />
+              <a href="mailto:support@signal5.io">support@signal5.io</a>
+            </p>
+          </div>
         </div>
       </div>
     </div>
