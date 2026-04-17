@@ -7249,6 +7249,73 @@
           padding: 72px 20px;
         }
         .hero {
+          display: flex;
+          flex-direction: column;
+          padding: 80px 20px 64px;
+          gap: 40px;
+        }
+        .hero-content {
+          order: 1; /* This puts the text at the top */
+        }
+        .hero-visual {
+          order: 2; /* This puts the visual graphic underneath the text */
+        }
+        .compare-grid,
+        .network-layout,
+        .irish-layout {
+          grid-template-columns: 1fr;
+        }
+        .pricing-grid {
+          max-width: 400px;
+        }
+        .network-us-box {
+          position: static;
+        }
+        .audit-grid {
+          grid-template-columns: 1fr;
+        }
+        .audit-item.full-width {
+          grid-column: auto;
+        }
+        .how-steps {
+          grid-template-columns: 1fr 1fr;
+          gap: 24px;
+        }
+        .how-steps::before {
+          display: none;
+        }
+        .how-banner {
+          padding: 36px 28px;
+        }
+        .how-banner-top {
+          flex-direction: column;
+        }
+        .footer-top {
+          grid-template-columns: 1fr;
+          gap: 40px;
+        }
+        .footer-bottom {
+          flex-direction: column;
+          gap: 16px;
+        }
+        .nav-links {
+          display: none;
+        }
+        .contact-card {
+          padding: 36px 24px;
+        }
+      } /* @media (max-width: 768px) {
+        .announcement-bar {
+          font-size: 11px;
+          padding: 9px 16px;
+        }
+        nav {
+          top: 38px;
+        }
+        section {
+          padding: 72px 20px;
+        }
+        .hero {
           grid-template-columns: 1fr;
           padding: 80px 20px 64px;
           gap: 40px;
@@ -7300,7 +7367,7 @@
         .contact-card {
           padding: 36px 24px;
         }
-      }
+      } */
     </style>
   </head>
   <body>
