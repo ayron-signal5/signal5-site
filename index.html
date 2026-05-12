@@ -5919,6 +5919,90 @@
           padding: 36px 24px;
         }
       } */
+
+      /* HAMBURGER & MOBILE MENU */
+      .hamburger {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 6px;
+        margin-left: 8px;
+      }
+      .hamburger span {
+        display: block;
+        width: 22px;
+        height: 2px;
+        background: var(--ink);
+        border-radius: 2px;
+        transition: transform 0.25s ease, opacity 0.25s ease;
+        transform-origin: center;
+      }
+      .hamburger.open span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+      }
+      .hamburger.open span:nth-child(2) {
+        opacity: 0;
+      }
+      .hamburger.open span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+      }
+      .mobile-menu {
+        display: none;
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-top: 1px solid var(--ink-10);
+        padding: 8px 0 16px;
+      }
+      .mobile-menu.open {
+        display: block;
+      }
+      .mobile-menu ul {
+        list-style: none;
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 0 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+      }
+      .mobile-menu ul li a {
+        display: block;
+        padding: 11px 10px;
+        font-size: 15px;
+        font-weight: 500;
+        color: var(--ink-60);
+        text-decoration: none;
+        border-radius: 10px;
+        transition: background 0.15s, color 0.15s;
+      }
+      .mobile-menu ul li a:hover {
+        background: var(--off-white);
+        color: var(--ink);
+      }
+      .mobile-menu ul li a.mobile-cta {
+        margin-top: 6px;
+        background: var(--ink);
+        color: var(--white);
+        text-align: center;
+        padding: 13px 18px;
+        border-radius: 100px;
+        font-weight: 600;
+        font-size: 14px;
+      }
+      .mobile-menu ul li a.mobile-cta:hover {
+        opacity: 0.85;
+        background: var(--ink);
+      }
+      @media (max-width: 768px) {
+        .hamburger {
+          display: flex;
+        }
+      }
     </style>
   </head>
   <body>
@@ -5937,14 +6021,27 @@
           <li><a href="#about">The Consultancy</a></li>
           <li><a href="#pricing">Pricing</a></li>
           <li>
-            <a
-              data-cta="nav"
-              href="https://buy.stripe.com/YOUR_STRIPE_LINK"
-              target="_blank"
-              class="btn-nav"
+            <a data-cta="nav" href="#pricing" class="btn-nav"
               >Secure Your Slot</a
             >
           </li>
+        </ul>
+        <button
+          class="hamburger"
+          id="hamburger-btn"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+        <ul>
+          <li><a href="#network">Infrastructure</a></li>
+          <li><a href="#audit">Compliance</a></li>
+          <li><a href="#about">The Consultancy</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#pricing" class="mobile-cta">Secure Your Slot</a></li>
         </ul>
       </div>
     </nav>
@@ -6502,8 +6599,8 @@
               <div class="how-step-num">1</div>
               <h4>Secure your slot</h4>
               <p>
-                Complete the €650 payment via Stripe. Covers full deployment and
-                your first 30 days of managed service.
+                Complete the €1,000 payment via Stripe (€650 setup + €350 first
+                month). Your retainer of €350/mo continues from month 2.
               </p>
               <span class="preflight-tag">Pre-Flight PDF sent immediately</span>
             </div>
@@ -6543,8 +6640,8 @@
         <p class="section-label">Engagement</p>
         <h2 class="section-h2">Transparent Consultancy Model.</h2>
         <p class="section-sub">
-          One initial deployment fee covering setup and your first month. One
-          monthly managed retainer thereafter. No hidden costs, no
+          €1,000 due at signup — €650 setup fee plus your first month's
+          retainer. Then €350/mo from month 2. No hidden costs, no
           infrastructure markup.
         </p>
         <div class="pricing-grid">
@@ -6552,15 +6649,16 @@
             <div class="price-tier">
               Cloud Consultancy &amp; Managed Infrastructure
             </div>
-            <h3>Initial Deployment + Month 1</h3>
+            <h3>Initial Deployment</h3>
             <p class="price-desc">
               Full infrastructure deployment, six-point Network Compliance
-              Standards walkthrough, 1-on-1 FaceTime onboarding, and your first
-              30 days of managed service — all included.
+              Standards walkthrough, and 1-on-1 FaceTime onboarding. €650 setup
+              fee + €350 first month retainer = €1,000 due at signup. €350/mo
+              from month 2.
             </p>
-            <div class="price-amount">€650</div>
+            <div class="price-amount">€1,000</div>
             <div class="price-period">
-              One-time · includes first 30 days · then €350/mo
+              €650 setup + €350 first month · then €350/mo
             </div>
             <ul class="price-features">
               <li>Provisioning of Dedicated US Network Node on AWS</li>
@@ -6595,9 +6693,10 @@
                 >Secure Your Deployment Slot →</a
               >
               <p class="transparency-caption">
-                Price: €650 initial setup (includes Month 1 managed retainer).
-                After payment, you will be redirected to our Calendly to book
-                your 1-on-1 FaceTime onboarding session.
+                Price: €1,000 due at signup (€650 setup fee + €350 first month
+                retainer). From month 2, €350/mo. After payment you are
+                redirected to our Calendly to book your 1-on-1 FaceTime
+                onboarding.
               </p>
             </div>
 
@@ -6648,7 +6747,7 @@
           <div class="contact-details">
             <div class="contact-detail">
               <div class="contact-detail-label">Initial Deployment</div>
-              <div class="contact-detail-value">€650 one-time</div>
+              <div class="contact-detail-value">€650 setup fee</div>
             </div>
             <div class="contact-detail">
               <div class="contact-detail-label">Managed Retainer</div>
@@ -6664,12 +6763,11 @@
             </div>
           </div>
           <a data-cta="bottom" href="#pricing" class="btn-primary"
-            >Secure Your Deployment Slot — €650</a
+            >Secure Your Deployment Slot — €1,000</a
           >
           <p class="cta-sub">
-            Secure Checkout via Stripe. €650 initial deployment (includes Month
-            1 management) followed by a €350/mo managed retainer. Cancel anytime
-            via email.
+            Secure Checkout via Stripe. €1,000 due at signup (€650 setup + €350
+            first month). Then €350/mo from month 2. Cancel anytime via email.
           </p>
           <div class="stripe-trust">
             <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
@@ -6844,6 +6942,27 @@
               }
             });
           }
+        }
+
+        // ── Hamburger menu ──
+        var hamburgerBtn = document.getElementById("hamburger-btn");
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (hamburgerBtn && mobileMenu) {
+          hamburgerBtn.addEventListener("click", function () {
+            var isOpen = mobileMenu.classList.toggle("open");
+            hamburgerBtn.classList.toggle("open", isOpen);
+            hamburgerBtn.setAttribute("aria-expanded", isOpen);
+            mobileMenu.setAttribute("aria-hidden", !isOpen);
+          });
+          // Close menu when a link inside is clicked
+          mobileMenu.querySelectorAll("a").forEach(function (link) {
+            link.addEventListener("click", function () {
+              mobileMenu.classList.remove("open");
+              hamburgerBtn.classList.remove("open");
+              hamburgerBtn.setAttribute("aria-expanded", "false");
+              mobileMenu.setAttribute("aria-hidden", "true");
+            });
+          });
         }
       });
     </script>
