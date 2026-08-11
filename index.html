@@ -167,7 +167,6 @@
       }
 
       .mobile-drawer {
-        display: none;
         position: fixed;
         inset: 0;
         z-index: 490;
@@ -179,11 +178,11 @@
         gap: 8px;
         transform: translateX(100%);
         transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+        display: flex;
       }
 
       .mobile-drawer.open {
         transform: translateX(0);
-        display: flex;
       }
 
       .mobile-drawer a {
@@ -216,10 +215,13 @@
         right: 28px;
         background: none;
         border: none;
-        color: var(--muted);
-        font-size: 32px;
+        color: var(--white);
+        font-size: 40px;
         cursor: pointer;
         line-height: 1;
+        z-index: 10;
+        opacity: 1;
+        display: block;
       }
 
       /* ── HERO ── */
@@ -1465,12 +1467,7 @@
         <li><a href="#who">Who It's For</a></li>
         <li><a href="#consult">Consultation</a></li>
       </ul>
-      <a
-        href="https://calendly.com/hello-signal5/30min"
-        class="nav-cta"
-        target="_blank"
-        >Book a Call</a
-      >
+      <a href="mailto:hello@signal5.io" class="nav-cta">Get in Touch</a>
       <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
         <span></span><span></span><span></span>
       </button>
@@ -1485,12 +1482,7 @@
       <a href="#results">Results</a>
       <a href="#consult">Consultation</a>
       <a href="#faq">FAQ</a>
-      <a
-        href="https://calendly.com/hello-signal5/30min"
-        class="mobile-cta"
-        target="_blank"
-        >Book a Call</a
-      >
+      <a href="mailto:hello@signal5.io" class="mobile-cta">Get in Touch</a>
     </div>
 
     <!-- HERO -->
@@ -1520,12 +1512,7 @@
       </p>
 
       <div class="hero-actions">
-        <a
-          href="https://calendly.com/hello-signal5/30min"
-          class="btn-primary"
-          target="_blank"
-          >Book a Consultation</a
-        >
+        <a href="mailto:hello@signal5.io" class="btn-primary">Get in Touch</a>
         <a href="#how-it-works" class="btn-ghost">See How It Works →</a>
       </div>
 
@@ -1899,55 +1886,57 @@
     <section class="consult-section" id="consult">
       <div class="container">
         <div class="reveal">
-          <p class="eyebrow">Book a Consultation</p>
-          <h2 class="section-h2">No pitch.<br />Just honest proof.</h2>
+          <p class="eyebrow">Get in Touch</p>
+          <h2 class="section-h2">Start with<br />a short email.</h2>
           <p class="section-sub">
-            Every Signal5 engagement starts with a consultation call. We show
-            you verified results live on screen, answer every question honestly,
-            and tell you clearly whether this is the right fit for your
-            business.
+            Before booking a setup call we ask a few brief questions by email to
+            make sure Signal5 is the right fit for your business. It takes two
+            minutes and means our call is focused and useful from the start.
           </p>
         </div>
 
         <div class="consult-inner reveal">
           <div class="consult-what">
-            <h3>What happens on the call</h3>
+            <h3>How it works</h3>
             <div class="consult-item">
               <span class="consult-num">01</span>
               <p class="consult-text">
-                <strong>We listen first.</strong> We want to understand what you
-                are building, what your current situation looks like, and what
-                consistent US reach would mean for your business specifically.
+                <strong>Email us first.</strong> Send a short message to
+                hello@signal5.io. Tell us briefly about your business, what you
+                are creating, and what US reach would mean for you commercially.
               </p>
             </div>
             <div class="consult-item">
               <span class="consult-num">02</span>
               <p class="consult-text">
-                <strong>We show you live proof.</strong> We share our screen and
-                walk you through our actual verified results in real time. You
-                see the data yourself — not a screenshot, not a graphic. Live.
+                <strong>We reply personally.</strong> We review your message and
+                reply within 24 hours. If Signal5 looks like a genuine fit we
+                share a few brief questions to understand your situation
+                properly before the call.
               </p>
             </div>
             <div class="consult-item">
               <span class="consult-num">03</span>
               <p class="consult-text">
-                <strong>We answer everything honestly.</strong> No question is
-                off limits. How it works, what the setup involves, what the
-                realistic outcomes are. Straight answers, not a sales pitch.
+                <strong>Book your setup call.</strong> Once we have spoken by
+                email and confirmed the fit we send you a booking link. The call
+                is focused entirely on your setup — showing you live results,
+                walking through the process, and discussing exactly what we
+                build for you.
               </p>
             </div>
             <div class="consult-item">
               <span class="consult-num">04</span>
               <p class="consult-text">
-                <strong>If it fits — we discuss next steps.</strong> Pricing,
-                timeline, and exactly what we build for you. If it is not the
-                right fit we will say so clearly. No pressure either way.
+                <strong>Honest answer either way.</strong> If Signal5 is not the
+                right fit for your specific situation we will say so clearly. No
+                pressure. No pitch. Just a straight answer.
               </p>
             </div>
           </div>
 
           <div class="reveal reveal-d1">
-            <p class="eyebrow" style="margin-bottom: 32px">Ready to book?</p>
+            <p class="eyebrow" style="margin-bottom: 32px">Ready to start?</p>
             <h3
               style="
                 font-family: var(--display);
@@ -1959,7 +1948,7 @@
                 line-height: 1.15;
               "
             >
-              Book your consultation now.
+              Send us a short email.
             </h3>
             <p
               style="
@@ -1970,26 +1959,27 @@
                 margin-bottom: 32px;
               "
             >
-              Select a time that works for you. We will be ready on the call
-              with live proof and honest answers.
+              Tell us about your business and what you are trying to achieve. We
+              reply personally within 24 hours. If it looks like a fit we take
+              it from there.
             </p>
             <a
-              href="https://calendly.com/hello-signal5/30min"
+              href="mailto:hello@signal5.io"
               class="btn-primary"
-              target="_blank"
               style="display: inline-block; margin-bottom: 16px"
-              >Book on Calendly →</a
+              >Email hello@signal5.io →</a
             >
             <br />
             <a
-              href="mailto:hello@signal5.io"
+              href="https://calendly.com/hello-signal5/30min"
+              target="_blank"
               style="
                 font-family: var(--mono);
                 font-size: 12px;
                 color: var(--signal2);
                 text-decoration: none;
               "
-              >Or email us directly · hello@signal5.io</a
+              >Already spoken to us? Book your setup call on Calendly</a
             >
           </div>
         </div>
@@ -2005,6 +1995,21 @@
         </div>
 
         <div class="faq-list reveal">
+          <div class="faq-item">
+            <button class="faq-q">
+              When does the monthly retainer start?<span class="faq-icon"
+                >+</span
+              >
+            </button>
+            <div class="faq-a">
+              Your monthly retainer does not begin until you have received your
+              device, verified the connection is working, and confirmed you are
+              happy with the setup. You only pay the ongoing retainer once
+              everything is live and working to your satisfaction. We confirm
+              this with you directly before any retainer billing begins.
+            </div>
+          </div>
+
           <div class="faq-item">
             <button class="faq-q">
               Is this a VPN?<span class="faq-icon">+</span>
@@ -2068,14 +2073,35 @@
           </div>
           <div class="faq-item">
             <button class="faq-q">
+              Is there any cost beyond your retainer fee?<span class="faq-icon"
+                >+</span
+              >
+            </button>
+            <div class="faq-a">
+              Yes — and we are completely transparent about this before you
+              commit to anything. Signal5 runs on dedicated private
+              infrastructure provisioned within your own account. This
+              infrastructure has a running cost of approximately €65 to €70 per
+              month billed directly to you by the infrastructure provider. This
+              is completely separate from Signal5's retainer fee. We walk you
+              through setting it up during onboarding — it takes approximately
+              ten minutes. We never see or handle this payment and we never mark
+              it up.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q">
               How is pricing structured?<span class="faq-icon">+</span>
             </button>
             <div class="faq-a">
-              Pricing is discussed on your consultation call based on your
-              specific situation and needs. There is a one-time setup fee that
-              covers everything we build for you, and an ongoing monthly
-              retainer that covers maintenance, oversight, and direct support.
-              We discuss the exact figures on the call — no surprises.
+              There is a one-time setup fee that covers everything we personally
+              build and configure for you, and an ongoing monthly retainer that
+              covers maintenance, oversight, and direct support. Pricing is
+              confirmed during our email exchange before you commit to anything
+              — no surprises on the call. The infrastructure running cost of
+              approximately €65 to €70 per month is separate and billed directly
+              to your own account.
             </div>
           </div>
         </div>
@@ -2136,18 +2162,18 @@
           Let us show you what this looks like for your business.
         </h2>
         <p class="cta-sub">
-          A short call. Live proof shown on screen. An honest conversation about
-          whether Signal5 is the right fit. If it is not — we will tell you
-          straight.
+          Send us a short email. We reply personally, ask a few brief questions,
+          and if it looks like a fit we book your setup call from there. No
+          pressure. Honest answer either way.
         </p>
         <div class="hero-actions" style="justify-content: center">
+          <a href="mailto:hello@signal5.io" class="btn-primary">Get in Touch</a>
           <a
             href="https://calendly.com/hello-signal5/30min"
-            class="btn-primary"
+            class="btn-ghost"
             target="_blank"
-            >Book a Consultation</a
+            >Book a Setup Call</a
           >
-          <a href="mailto:hello@signal5.io" class="btn-ghost">Email Directly</a>
         </div>
       </div>
     </section>
@@ -2186,10 +2212,10 @@
           <a href="terms.html">Terms of Service</a>
           <a href="terms.html#privacy">Privacy Policy</a>
           <a href="terms.html#refunds">Refund Policy</a>
+          <a href="mailto:hello@signal5.io">Get in Touch</a>
           <a href="https://calendly.com/hello-signal5/30min" target="_blank"
-            >Book a Consultation</a
+            >Book a Setup Call</a
           >
-          <a href="mailto:hello@signal5.io">hello@signal5.io</a>
         </div>
       </div>
       <div class="footer-bottom">
@@ -2208,14 +2234,9 @@
     </footer>
 
     <!-- FLOATING BUTTON -->
-    <a
-      href="https://calendly.com/hello-signal5/30min"
-      class="float-btn"
-      id="floatBtn"
-      target="_blank"
-    >
+    <a href="mailto:hello@signal5.io" class="float-btn" id="floatBtn">
       <span class="live-dot" style="width: 6px; height: 6px"></span>
-      Book a Call
+      Get in Touch
     </a>
 
     <script>
@@ -2225,19 +2246,13 @@
       var mobileClose = document.getElementById("mobileClose");
 
       function openMenu() {
-        mobileDrawer.style.display = "flex";
-        setTimeout(function () {
-          mobileDrawer.classList.add("open");
-        }, 10);
+        mobileDrawer.classList.add("open");
         document.body.style.overflow = "hidden";
       }
 
       function closeMenu() {
         mobileDrawer.classList.remove("open");
         document.body.style.overflow = "";
-        setTimeout(function () {
-          mobileDrawer.style.display = "none";
-        }, 350);
       }
 
       hamburger.addEventListener("click", openMenu);
